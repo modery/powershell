@@ -90,11 +90,15 @@
 </ul>
 <p>Adds a Site Collection scoped App Catalog to a site</p>
 <h2 id="syntax">SYNTAX</h2>
-<pre><code class="lang-powershell">Add-PnPSiteCollectionAppCatalog -Site &lt;SitePipeBind&gt; [-Connection &lt;PnPConnection&gt;] [&lt;CommonParameters&gt;]
+<pre><code class="lang-powershell">Add-PnPSiteCollectionAppCatalog [-Site &lt;SitePipeBind&gt;] [-Connection &lt;PnPConnection&gt;] [&lt;CommonParameters&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
 <h2 id="examples">EXAMPLES</h2>
 <h3 id="example-1">EXAMPLE 1</h3>
+<pre><code class="lang-powershell">Add-PnPSiteCollectionAppCatalog
+</code></pre>
+<p>This will add a SiteCollection app catalog to the currently connected to site</p>
+<h3 id="example-2">EXAMPLE 2</h3>
 <pre><code class="lang-powershell">Add-PnPSiteCollectionAppCatalog -Site &quot;https://contoso.sharepoint.com/sites/FinanceTeamsite&quot;
 </code></pre>
 <p>This will add a SiteCollection app catalog to the specified site</p>
@@ -115,14 +119,15 @@ Accept wildcard characters: False
 <pre><code class="lang-yaml">Type: SitePipeBind
 Parameter Sets: (All)
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h2 id="related-links">RELATED LINKS</h2>
-<p><a href="https://aka.ms/m365pnp">Microsoft 365 Patterns and Practices</a><a href="https://docs.microsoft.com/sharepoint/dev/general-development/site-collection-app-catalog#configure-and-manage-site-collection-app-catalogs">Documentation</a></p>
+<p><a href="https://aka.ms/m365pnp">Microsoft 365 Patterns and Practices</a>
+<a href="https://docs.microsoft.com/sharepoint/dev/general-development/site-collection-app-catalog#configure-and-manage-site-collection-app-catalogs">Microsoft Graph documentation</a></p>
 </article>
           </div>
           <div class="hidden-sm col-md-2" role="complementary">
@@ -149,5 +154,12 @@ Accept wildcard characters: False
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ag6usxufyq");
+    </script>  </body>
 </html>

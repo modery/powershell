@@ -84,7 +84,7 @@
                     <h1 id="get-pnpgroup">Get-PnPGroup</h1>
 
 <h2 id="synopsis">SYNOPSIS</h2>
-<p>Returns a specific SharePoint group or all SharePoint groups in site.</p>
+<p>Returns a specific SharePoint group or all SharePoint groups in the current site</p>
 <h2 id="syntax">SYNTAX</h2>
 <h3 id="all-default">All (Default)</h3>
 <pre><code class="lang-powershell">Get-PnPGroup [-Connection &lt;PnPConnection&gt;] [-Includes &lt;String[]&gt;] [&lt;CommonParameters&gt;]
@@ -110,11 +110,11 @@
 <h3 id="example-1">EXAMPLE 1</h3>
 <pre><code class="lang-powershell">Get-PnPGroup
 </code></pre>
-<p>Returns all SharePoint groups in a site</p>
+<p>Returns all SharePoint groups in the current site</p>
 <h3 id="example-2">EXAMPLE 2</h3>
 <pre><code class="lang-powershell">Get-PnPGroup -Identity 'My Site Users'
 </code></pre>
-<p>This will return the group called 'My Site Users' in if available in the current site</p>
+<p>This will return the group called 'My Site Users' if available in the current site. The name is case sensitive, so a group called 'My site users' would not be found.</p>
 <h3 id="example-3">EXAMPLE 3</h3>
 <pre><code class="lang-powershell">Get-PnPGroup -AssociatedMemberGroup
 </code></pre>
@@ -165,7 +165,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-identity">-Identity</h3>
-<p>Get a specific group by name</p>
+<p>Get a specific group by its name or id. The name case sensitive.</p>
 <pre><code class="lang-yaml">Type: GroupPipeBind
 Parameter Sets: ByName
 Aliases: Name
@@ -204,5 +204,12 @@ Accept wildcard characters: False
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>  </body>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ag6usxufyq");
+    </script>  </body>
 </html>
